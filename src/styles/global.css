@@ -1,0 +1,172 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/**********NavBar************/
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar.scrolled {
+  background-color: rgba(0, 0, 0, 0.8); /* Fondo al hacer scroll */
+  border-bottom: 8px solid #0643a7;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  max-width: 1200px;
+  padding: 10px 0;
+}
+
+/* Logo */
+.logo {
+  height: 70px;
+}
+
+/* Menú */
+.menu-links {
+  display: flex;
+  gap: 40px;
+  transition: transform 0.3s ease;
+  font-size: 20px;
+}
+
+.menu-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+/* Menú móvil */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+}
+
+.close-menu {
+  display: none;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+}
+
+/* Estilo móvil */
+@media (max-width: 768px) {
+  .menu-links {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 1);
+    flex-direction: column;
+    width: 100%;
+    padding: 5rem;
+    height: 400px;
+  }
+
+  .menu-links.show {
+    display: flex;
+    align-items: center;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  .close-menu {
+    display: block;
+  }
+}
+
+.title-certi {
+  font-size: 45px;
+  text-align: center;
+  margin: 2rem 0 1rem 0;
+}
+
+/*****************************/
+
+/**********Contacto************/
+/* Contenedor principal del formulario y la imagen */
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px; /* Espaciado entre los elementos */
+  padding: 100px;
+}
+
+/* El formulario ocupa el 50% */
+.contact-container__component {
+  flex: 1;
+  max-width: 50%; /* Limita el ancho al 50% */
+}
+
+.contact-container__component .component-headerForm {
+  margin: 0 0 2rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact-container__component
+  .component-headerForm
+  .component-headerForm__descrip {
+  font-size: 18px;
+  color: #444;
+}
+
+.contact-container__component
+  .component-headerForm
+  .component-headerForm__title {
+  font-size: 48px;
+}
+
+/* La imagen ocupa el 50% */
+.contact-container__image {
+  flex: 1;
+  max-width: 50%; /* Limita el ancho al 50% */
+  border-radius: 8px; /* Borde redondeado opcional */
+  object-fit: cover; /* Ajusta la imagen al contenedor */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra opcional */
+}
+
+/* Responsividad: en pantallas pequeñas, la imagen y el formulario se apilan */
+@media (max-width: 425px) {
+  .contact-container {
+    flex-direction: column; /* Apila los elementos verticalmente */
+  }
+
+  .contact-container__component {
+    max-width: 100%; /* El ancho ocupa el 100% */
+  }
+
+  .contact-image {
+    display: none;
+  }
+}

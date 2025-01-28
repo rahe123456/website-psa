@@ -1,0 +1,73 @@
+/* Contenedor principal */
+form {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+/* Etiquetas */
+form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Campos de entrada y área de texto */
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form textarea:focus {
+  border-color: #4caf50;
+  outline: none;
+}
+
+/* Botón de envío */
+form input[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+form input[type="submit"]:hover {
+  background-color: #388e3c;
+}
+
+/* Estilos para móviles */
+@media (max-width: 768px) {
+  form {
+    padding: 15px;
+  }
+
+  form input[type="text"],
+  form input[type="email"],
+  form textarea {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  form input[type="submit"] {
+    padding: 12px;
+    font-size: 14px;
+  }
+}

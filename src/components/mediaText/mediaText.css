@@ -1,0 +1,13 @@
+.mediaText {
+  padding: 69px;
+}
+
+.mediaText .mediaText-contain {
+  display: flex;
+}
+
+.mediaText .mediaText-contain .mediaText-contain__img,
+.mediaText .mediaText-contain .mediaText-contain__text {
+  width: 50%;
+  padding: 1rem;
+}

@@ -27,7 +27,6 @@ const ContactUs = () => {
 
   return (
     <form ref={form} onSubmit={sendEmail}>
-      <input type="text" name="subject" />
       <input type="text" name="user_name" placeholder="Nombres y Apellidos" />
       <input type="email" name="user_email" placeholder="Correo Electrónico" />
       <input type="text" name="phone" placeholder="Celular" />

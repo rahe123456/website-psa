@@ -106,7 +106,22 @@ body {
 .title-certi {
   font-size: 45px;
   text-align: center;
-  margin: 2rem 0 1rem 0;
+  margin: 5rem 0 2rem 0;
+}
+
+.btnProyect {
+  margin-top: 2.5rem;
+  text-align: center;
+}
+
+.btnProyect-link {
+  font-size: 16px;
+  padding: 18px 70px 18px 50px;
+  background: #0643a7;
+  border: 2px solid;
+  color: #ffffff;
+  font-weight: 700;
+  cursor: pointer;
 }
 
 /*****************************/

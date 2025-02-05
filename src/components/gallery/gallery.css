@@ -7,7 +7,7 @@
 .contenedor-imagenes {
   display: flex;
   width: 85%;
-  margin: 5rem auto;
+  margin: 0rem auto;
   justify-content: space-around;
   flex-wrap: wrap;
   border-radius: 3px;

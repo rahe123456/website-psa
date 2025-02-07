@@ -117,19 +117,36 @@ export default function Home() {
         className="servicios-swiper"
       />
       <div>
-        <MediaText
-          imagen1={mediaText1}
-          titulo1="Título de prueba"
-          descripcion1="Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of de Finibus Bonorum et Malorum The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, Lorem ipsum dolor sit amet.., comes from a line in section 1.10.32.
+        <div>
+          <MediaText
+            imagen1={mediaText1}
+            titulo1="Título de prueba"
+            descripcion1="Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of de Finibus Bonorum et Malorum The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, Lorem ipsum dolor sit amet.., comes from a line in section 1.10.32.
 
 The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from de Finibus Bonorum et Malorum by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham."
-        />
-        <h2 className="title-certi">Últimos proyectos</h2>
-        <Gallery cards={cardsHome} />
-        <div className="btnProyect"><a className="btnProyect-link">Ver todos los proyectos</a></div>
-
-        <h2 className="title-certi">Nuestras licencias</h2>
-        <Carrousel carrousel={carrousel} className="carrousel-swiper" />
+          />
+        </div>
+        <div>
+          <h2 className="title-certi">Nuestras licencias</h2>
+          <Carrousel carrousel={carrousel} className="carrousel-swiper" />
+        </div>
+        <div>
+          <div className="bannerMensaje">
+            <p className="bannerMensaje-txt">
+              ¿Deseas asesoría para tu próximo proyecto? Nuestro equipo de
+              especialistas <br /> está listo para resolver todas tus dudas y
+              llevar tu proyecto al siguiente nivel.{" "}
+            </p>
+            <a className="bannerMensaje-link">Cotizar aquí</a>
+          </div>
+        </div>
+        <div>
+          <h2 className="title-certi">Últimos proyectos</h2>
+          <Gallery cards={cardsHome} />
+          <div className="btnProyect">
+            <a className="btnProyect-link">Ver todos los proyectos</a>
+          </div>
+        </div>
       </div>
       <Footer />
     </>

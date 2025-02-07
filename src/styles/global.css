@@ -110,7 +110,7 @@ body {
 }
 
 .btnProyect {
-  margin-top: 2.5rem;
+  margin: 2.5rem auto;
   text-align: center;
 }
 
@@ -124,8 +124,27 @@ body {
   cursor: pointer;
 }
 
-/*****************************/
+/*************** bannerMensaje **************/
 
+.bannerMensaje {
+  display: flex;
+  background-color: #0643a7;
+  padding: 30px;
+  font-weight: bold;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.bannerMensaje .bannerMensaje-txt {
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.bannerMensaje .bannerMensaje-link {
+  padding: 18px 70px 18px 50px;
+  background: #919191;
+  font-size: 16px;
+}
 /**********Contacto************/
 /* Contenedor principal del formulario y la imagen */
 .contact-container {

@@ -14,16 +14,16 @@ import sliderBanner6 from "../img/inicio/sliderHome/CALCULO-ELECTRICO2.jpg";
 import sliderBanner7 from "../img/inicio/sliderHome/CALCULO-ESTRUC1.JPG";
 import sliderBanner8 from "../img/inicio/sliderHome/CALCULO-ESTRUC2.JPG";
 
-import logoCarrousel1 from "../img/logo-1.jpg";
-import logoCarrousel2 from "../img/logo-2.jpg";
-import logoCarrousel3 from "../img/logo-3.jpg";
-import logoCarrousel4 from "../img/logo-4.jpg";
-import logoCarrousel5 from "../img/logo-5.jpg";
-import logoCarrousel6 from "../img/logo-6.jpg";
-import logoCarrousel7 from "../img/logo-7.jpg";
-import logoCarrousel8 from "../img/logo-8.jpg";
-import logoCarrousel9 from "../img/logo-9.jpg";
-import logoCarrousel10 from "../img/logo-10.jpg";
+import logoCarrousel1 from "../img/inicio/carrouselHome/logo-1.jpg";
+import logoCarrousel2 from "../img/inicio/carrouselHome/logo-2.jpg";
+import logoCarrousel3 from "../img/inicio/carrouselHome/logo-3.jpg";
+import logoCarrousel4 from "../img/inicio/carrouselHome/logo-4.jpg";
+import logoCarrousel5 from "../img/inicio/carrouselHome/logo-5.jpg";
+import logoCarrousel6 from "../img/inicio/carrouselHome/logo-6.jpg";
+import logoCarrousel7 from "../img/inicio/carrouselHome/logo-7.jpg";
+import logoCarrousel8 from "../img/inicio/carrouselHome/logo-8.jpg";
+import logoCarrousel9 from "../img/inicio/carrouselHome/logo-9.jpg";
+import logoCarrousel10 from "../img/inicio/carrouselHome/logo-10.jpg";
 
 import mediaText1 from "../img/imagen-11.jpg";
 

@@ -47,8 +47,6 @@ import About from "./pages/About";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 
-import logo from "./img/psa-logo.jpeg";
-
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -82,7 +80,7 @@ function App() {
         <div className="navbar-container">
           <Link to="/" onClick={closeMenu}>
             <img
-              src={logo}
+              src="psa-logo.jpeg"
               alt="Logo PSA ingeniería y construcción"
               className="logo"
             />
@@ -101,13 +99,13 @@ function App() {
             <Link to="/" onClick={closeMenu}>
               Inicio
             </Link>
-            <Link to="/about" onClick={closeMenu}>
+            <Link to="/nosotros" onClick={closeMenu}>
               Nosotros
             </Link>
-            <Link to="/projects" onClick={closeMenu}>
+            <Link to="/proyectos" onClick={closeMenu}>
               Proyectos
             </Link>
-            <Link to="/contact" onClick={closeMenu}>
+            <Link to="/contacto" onClick={closeMenu}>
               Contacto
             </Link>
           </div>
@@ -115,9 +113,9 @@ function App() {
       </nav>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/nosotros" element={<About />} />
+        <Route path="/proyectos" element={<Projects />} />
+        <Route path="/contacto" element={<Contact />} />
       </Routes>
     </Router>
   );

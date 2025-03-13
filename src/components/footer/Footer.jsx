@@ -1,12 +1,15 @@
 import "./Footer.css";
-import logo from "../../img/logo-sin-fondo.png";
 
 export default function Footer() {
   return (
     <footer>
       <div className="footer-content">
         <div className="footer-logo">
-          <img src={logo} alt="Logo" className="footer-logo-img" />
+          <img
+            src="logo-sin-fondo.png"
+            alt="Logo"
+            className="footer-logo-img"
+          />
         </div>
         <div className="footer-sections">
           <div className="footer-section">
@@ -22,13 +25,18 @@ export default function Footer() {
             <h4>Enlaces Rápidos</h4>
             <ul>
               <li>
-                <a href="#">Inicio</a>
+                <a href="./">Inicio</a>
               </li>
               <li>
-                <a href="#">Servicios</a>
+                <a href="./nosotros">Nosotros</a>
               </li>
+
               <li>
-                <a href="#">Contacto</a>
+                <a href="./proyectos">Proyectos</a>
+              </li>
+              <li></li>
+              <li>
+                <a href="./contacto">Contacto</a>
               </li>
             </ul>
           </div>

@@ -1,14 +1,13 @@
 import ContactUs from "../components/contactUs/ContactUs";
 import BannerSolo from "../components/bannerSolo/BannerSolo";
 
-import bannerNosotros from "../img/slider2.jpg";
-import imgForm from "../img/callcenter.jpg";
+import imgForm from "../img/contacto/formulario/callcenter.jpg";
 import Footer from "../components/footer/Footer";
 
 export default function Contact() {
   return (
     <>
-      <BannerSolo banner={bannerNosotros} bannerAlt="banner nosotros" />
+      <BannerSolo banner="" bannerAlt="banner nosotros" />
       <div className="contact-container">
         <div className="contact-container__component">
           <div className="component-headerForm">

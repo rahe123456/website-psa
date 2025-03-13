@@ -5,7 +5,7 @@ import Gallery from "../components/gallery/Gallery";
 import Footer from "../components/footer/Footer";
 import "../styles/global.css";
 
-import sliderBanner1 from "../img/inicio/sliderHome/TEKLA-1.png";
+// import sliderBanner1 from "../img/inicio/sliderHome/TEKLA-1.png";
 import sliderBanner2 from "../img/inicio/sliderHome/TEKLA-2.png";
 import sliderBanner3 from "../img/inicio/sliderHome/CASA-1.jpg";
 import sliderBanner4 from "../img/inicio/sliderHome/CASA-2.jpg";
@@ -34,7 +34,7 @@ import cardHome3 from "../img/inicio/cardHome/imagen-3.png";
 export default function Home() {
   const slides = [
     {
-      image: sliderBanner1,
+      image: sliderBanner2,
       title: "Modelado de Estructuras Metalicas",
       description:
         "Tekla Structures es una herramienta poderosa para el desarrollo de proyectos de ingeniería. Su capacidad para modelar estructuras detalladas, gestionar información BIM, generar planos automáticamente y simular la construcción en 4D permite mejorar la eficiencia, la precisión y la colaboración en todas las etapas del proyecto",

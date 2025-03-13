@@ -1,0 +1,52 @@
+.contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding: 40px;
+  flex-wrap: wrap; /* Permite que los elementos se acomoden en pantallas pequeñas */
+}
+
+.card {
+  text-align: center;
+  max-width: 400px;
+  flex: 1; /* Hace que los elementos se ajusten automáticamente */
+  min-width: 300px; /* Evita que sean demasiado pequeños */
+}
+
+.icono {
+  width: 80px; /* Tamaño más flexible */
+  height: auto;
+}
+
+h2 {
+  font-size: 22px;
+  font-weight: bold;
+  color: #222;
+}
+
+p {
+  font-size: 16px;
+  color: #444;
+  line-height: 1.5;
+}
+
+/* RESPONSIVIDAD */
+@media (max-width: 768px) {
+  .contenedor {
+    flex-direction: column; /* Pone los elementos uno debajo del otro en pantallas pequeñas */
+    gap: 30px;
+  }
+
+  .card {
+    max-width: 90%; /* Ajusta el ancho para que no quede pegado a los bordes */
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+}

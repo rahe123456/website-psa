@@ -4,10 +4,11 @@
   box-sizing: border-box;
 }
 
+/* ===== CONTENEDOR PRINCIPAL ===== */
 .contenedor-imagenes {
   display: flex;
   width: 85%;
-  margin: 0rem auto;
+  margin: 5rem auto;
   justify-content: space-around;
   flex-wrap: wrap;
   border-radius: 3px;
@@ -19,63 +20,197 @@
   height: 250px;
   margin-bottom: 10px;
   box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.75);
+  cursor: pointer;
+  border-radius: 5px;
+  overflow: hidden;
 }
 
 .imagen img {
   height: 100%;
   width: 100%;
   object-fit: cover;
+  transition: transform 0.3s ease;
 }
 
+.imagen:hover img {
+  transform: scale(1.05);
+}
+
+/* ===== EFECTO OVERLAY ===== */
 .overlayGa {
   position: absolute;
   bottom: 0;
   left: 0;
-  background: #0741ada2;
+  background: rgba(7, 65, 173, 0.8);
   width: 100%;
   height: 0%;
-  transition: 0.5s ease;
+  transition: height 0.5s ease;
   overflow: hidden;
 }
 
 .overlayGa .overlayGa-contain {
   position: absolute;
   left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   text-align: center;
-  transform: translate(-50%, 50%);
   width: 90%;
-  height: 40%;
 }
 
 .overlayGa .overlayGa-contain h2 {
   color: #ffffff;
-  font-weight: 300;
-  font-size: 24px;
-  height: 130px;
+  font-weight: 400;
+  font-size: 22px;
+  margin-bottom: 10px;
 }
 
-.overlayGa .overlayGa-contain a {
-  color: #ffffff;
+.overlayGa .overlayGa-contain button {
   background: #919191a2;
-  border: transparent;
-  font-size: 17px;
-  margin-top: 15px;
-  border-radius: 10px;
+  border: none;
+  font-size: 16px;
+  margin-top: 10px;
+  border-radius: 8px;
   cursor: pointer;
-  padding: 0.9rem 1.5rem;
+  padding: 0.8rem 1.2rem;
   text-decoration: none;
+  color: white;
+  transition: background 0.3s ease;
 }
 
-.overlayGa .overlayGa-contain a:hover {
+.overlayGa .overlayGa-contain button:hover {
   background: #919191;
-  border: 1px solid #515151;
 }
 
 .imagen:hover .overlayGa {
   height: 100%;
-  cursor: pointer;
 }
 
+/* ===== MODAL ===== */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.modal-content {
+  background: white;
+  width: 85%;
+  max-width: 1000px;
+  border-radius: 10px;
+  padding: 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  max-height: 90vh; /* Permite scroll en el modal */
+  overflow-y: auto; /* Activa el scroll si el contenido es largo */
+}
+
+/* ===== BOTÓN CERRAR MODAL ===== */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: red;
+}
+
+/* ===== CONTENIDO DEL MODAL ===== */
+.modal-body {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+  /* padding: 0.5rem; */
+}
+
+/* .modal-body__img {
+  width: 50%;
+} */
+
+.modal-image-container {
+  flex: 1;
+  width: 100%;
+}
+
+.modal-main-image {
+  /* width: 100%; */
+  border-radius: 10px;
+  object-fit: cover;
+  width: 440px;
+  height: 400px;
+}
+
+/* ===== MINIATURAS ===== */
+.modal-thumbnails {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+.thumbnail {
+  width: 80px;
+  height: 60px;
+  object-fit: cover;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: transform 0.3s ease, border 0.3s ease;
+}
+
+.thumbnail.active,
+.thumbnail:hover {
+  transform: scale(1.1);
+  border: 2px solid blue;
+}
+
+/* ===== INFORMACIÓN DEL MODAL ===== */
+.modal-info {
+  flex: 1;
+  text-align: left;
+}
+
+.modal-info h2 {
+  font-size: 30px;
+  margin-bottom: 10px;
+  color: #0741ad;
+}
+
+.modal-info p {
+  margin: 30px auto;
+  line-height: 20px;
+  font-size: 14px;
+}
+
+.modal-details {
+  margin: 30px auto;
+  display: flex;
+  gap: 3rem;
+}
+
+.modal-details p {
+  font-size: 14px;
+  margin: 5px 0;
+  font-weight: 500;
+}
+
+.modal-details p strong {
+  font-weight: bold;
+}
+
+/* ===== MEDIA QUERIES ===== */
 @media (max-width: 768px) {
   .contenedor-imagenes {
     width: 90%;
@@ -88,34 +223,47 @@
   }
 
   .overlayGa .overlayGa-contain h2 {
-    font-size: 17px;
-    height: 100px;
+    font-size: 18px;
   }
 
-  .overlayGa .overlayGa-contain a {
-    font-size: 12px;
-    padding: 0.5rem 1rem;
+  .overlayGa .overlayGa-contain button {
+    font-size: 14px;
+    padding: 0.6rem 1rem;
+  }
+
+  .modal-content {
+    width: 95%;
+    max-height: 95vh; /* Ajusta el tamaño en móviles */
+  }
+
+  .modal-body {
+    flex-direction: column;
+  }
+
+  .modal-image-container {
+    /* max-width: 100%; */
   }
 }
 
-@media (max-width: 725px) {
-  .contenedor-imagenes {
-    width: 90%;
-    margin-top: 2rem;
-  }
-
+@media (max-width: 480px) {
   .contenedor-imagenes .imagen {
     width: 90%;
-    margin-bottom: 1rem;
   }
 
   .overlayGa .overlayGa-contain h2 {
-    font-size: 17px;
-    height: 100px;
+    font-size: 16px;
   }
 
-  .overlayGa .overlayGa-contain a {
+  .overlayGa .overlayGa-contain button {
     font-size: 12px;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 0.8rem;
+  }
+
+  .modal-content {
+    width: 95%;
+  }
+
+  .modal-main-image {
+    width: 100%;
   }
 }

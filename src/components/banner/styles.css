@@ -64,6 +64,7 @@ body {
   width: 900px;
   font-size: 67px;
   line-height: 87px;
+  color: #ffffff;
 }
 
 .servicios-swiper .swiper-slide .slide-content p {
@@ -72,6 +73,7 @@ body {
   width: 800px;
   font-size: 20px;
   line-height: 30px;
+  color: #ffffff;
 }
 
 @media (max-width: 768px) {

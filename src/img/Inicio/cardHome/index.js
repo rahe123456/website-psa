@@ -1,6 +1,6 @@
-import cardHome1 from "./imagen-1.png";
-import cardHome2 from "./imagen-2.png";
-import cardHome3 from "./imagen-3.png";
+import cardHome1 from "./imagen-1.webp";
+import cardHome2 from "./imagen-2.webp";
+import cardHome3 from "./imagen-3.webp";
 
 const cardsHome = [
   {

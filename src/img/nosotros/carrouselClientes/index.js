@@ -1,9 +1,9 @@
-import cliente1 from "./comedsa.png";
-import cliente2 from "./latam.png";
-import cliente3 from "./reali.png";
-import cliente4 from "./tailoy.png";
-import cliente5 from "./vijicsa.png";
-import cliente6 from "./wc&hnos.png";
+import cliente1 from "./cliente-comedsa.webp";
+import cliente2 from "./cliente-latam.webp";
+import cliente3 from "./cliente-reali.webp";
+import cliente4 from "./cliente-tailoy.webp";
+import cliente5 from "./cliente-vijicsa.webp";
+import cliente6 from "./cliente-wc&hnos.webp";
 
 const carrouselClientes = [
   cliente1,

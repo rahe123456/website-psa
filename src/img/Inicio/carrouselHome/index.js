@@ -1,13 +1,13 @@
-import logoCarrousel1 from "./logo-1.jpg";
-import logoCarrousel2 from "./logo-2.jpg";
-import logoCarrousel3 from "./logo-3.jpg";
-import logoCarrousel4 from "./logo-4.jpg";
-import logoCarrousel5 from "./logo-5.jpg";
-import logoCarrousel6 from "./logo-6.jpg";
-import logoCarrousel7 from "./logo-7.jpg";
-import logoCarrousel8 from "./logo-8.jpg";
-import logoCarrousel9 from "./logo-9.jpg";
-import logoCarrousel10 from "./logo-10.jpg";
+import logoCarrousel1 from "./logo-1.webp";
+import logoCarrousel2 from "./logo-2.webp";
+import logoCarrousel3 from "./logo-3.webp";
+import logoCarrousel4 from "./logo-4.webp";
+import logoCarrousel5 from "./logo-5.webp";
+import logoCarrousel6 from "./logo-6.webp";
+import logoCarrousel7 from "./logo-7.webp";
+import logoCarrousel8 from "./logo-8.webp";
+import logoCarrousel9 from "./logo-9.webp";
+import logoCarrousel10 from "./logo-10.webp";
 
 const carrouselHome = [
   logoCarrousel1,

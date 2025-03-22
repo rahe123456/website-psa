@@ -1,11 +1,11 @@
-import sliderBanner1 from "./tekla-1.png";
-import sliderBanner2 from "./tekla-2.png";
-import sliderBanner3 from "./casa-1.jpg";
-import sliderBanner4 from "./casa-2.jpg";
-import sliderBanner5 from "./calculo-electrico-1.jpg";
-import sliderBanner6 from "./calculo-electrico-2.jpg";
-import sliderBanner7 from "./calculo-estructura-1.jpg";
-import sliderBanner8 from "./calculo-estructura-2.jpg";
+import sliderBanner1 from "./tekla-1.webp";
+import sliderBanner2 from "./tekla-2.webp";
+import sliderBanner3 from "./casa-1.webp";
+import sliderBanner4 from "./casa-2.webp";
+import sliderBanner5 from "./calculo-electrico-1.webp";
+import sliderBanner6 from "./calculo-electrico-2.webp";
+import sliderBanner7 from "./calculo-estructura-1.webp";
+import sliderBanner8 from "./calculo-estructura-2.webp";
 
 const slides = [
   sliderBanner1,

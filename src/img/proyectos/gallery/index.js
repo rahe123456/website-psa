@@ -1,14 +1,14 @@
-import imagen1 from "./imagen-1.png";
-import imagen2 from "./imagen-2.png";
-import imagen3 from "./imagen-3.png";
-import imagen4 from "./imagen-4.jpg";
-import imagen5 from "./imagen-5.jpg";
-import imagen6 from "./imagen-6.png";
-import imagen7 from "./imagen-7.png";
-import imagen8 from "./imagen-8.png";
-import imagen9 from "./imagen-9.png";
-import imagen10 from "./imagen-10.png";
-import imagen11 from "./imagen-11.jpg";
+import imagen1 from "./proyecto-1.webp";
+import imagen2 from "./proyecto-2.webp";
+import imagen3 from "./proyecto-3.webp";
+import imagen4 from "./proyecto-4.webp";
+import imagen5 from "./proyecto-5.webp";
+import imagen6 from "./proyecto-6.webp";
+import imagen7 from "./proyecto-7.webp";
+import imagen8 from "./proyecto-8.webp";
+import imagen9 from "./proyecto-9.webp";
+import imagen10 from "./proyecto-10.webp";
+import imagen11 from "./proyecto-11.webp";
 
 const cards = [
   { general: imagen1, hijos: [imagen1, imagen2, imagen3, imagen4, imagen5] },

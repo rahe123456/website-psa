@@ -152,7 +152,7 @@ body {
   justify-content: space-between;
   align-items: center;
   gap: 20px; /* Espaciado entre los elementos */
-  padding: 100px;
+  padding: 30px;
 }
 
 /* El formulario ocupa el 50% */
@@ -202,5 +202,11 @@ body {
 
   .contact-image {
     display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .contact-container {
+    padding: 70px;
   }
 }

@@ -5,6 +5,9 @@ import Footer from "../components/footer/Footer";
 import "./About.css";
 
 import carrouselClientes from "../img/nosotros/carrouselClientes";
+import bannerNosotros from "../img/nosotros/banner";
+
+import { FloatingWhatsApp } from "react-floating-whatsapp";
 
 export default function About() {
   const carrouselData = carrouselClientes.map((image) => ({
@@ -12,7 +15,11 @@ export default function About() {
   }));
   return (
     <>
-      <BannerSolo banner="" bannerAlt="banner nosotros" />
+      <BannerSolo
+        bannerDesktop={bannerNosotros[0]}
+        bannerMobile={bannerNosotros[1]}
+        bannerAlt="banner nosotros"
+      />
       <MediaText
         imagen1=""
         titulo1="Psa ingeniería y construcción"
@@ -42,6 +49,13 @@ export default function About() {
         <h2 className="title-certi">Nuestros clientes</h2>
         <Carrousel carrousel={carrouselData} className="carrousel-swiper" />
       </div>
+      <FloatingWhatsApp
+        accountName="PSA Ingeniería y construcción"
+        phoneNumber="+51923689624"
+        statusMessage="Respondemos a la brevedad posible"
+        chatMessage="¡Hola! 🤝 ¿Cómo podemos ayudarte?"
+        placeholder="Envianos un mensaje"
+      />
       <Footer />
     </>
   );

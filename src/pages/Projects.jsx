@@ -4,6 +4,8 @@ import "../styles/global.css";
 import BannerSolo from "../components/bannerSolo/BannerSolo";
 import cards from "../img/proyectos/gallery";
 
+import { FloatingWhatsApp } from "react-floating-whatsapp";
+
 export default function Projects() {
   const cardsData = [
     {
@@ -134,6 +136,13 @@ export default function Projects() {
       <BannerSolo banner="" bannerAlt="banner proyectos" />
       <h2 className="title-certi">Nuestros proyectos</h2>
       <Gallery cards={cardsData} />
+      <FloatingWhatsApp
+        accountName="PSA Ingeniería y construcción"
+        phoneNumber="+51923689624"
+        statusMessage="Respondemos a la brevedad posible"
+        chatMessage="¡Hola! 🤝 ¿Cómo podemos ayudarte?"
+        placeholder="Envianos un mensaje"
+      />
       <Footer />
     </>
   );

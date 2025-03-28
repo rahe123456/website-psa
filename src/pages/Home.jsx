@@ -10,6 +10,8 @@ import cardsHome from "../img/inicio/cardHome";
 import slides from "../img/inicio/sliderHome";
 import carrouselHome from "../img/inicio/carrouselHome";
 
+import { FloatingWhatsApp } from "react-floating-whatsapp";
+
 export default function Home() {
   const slidesData = [
     {
@@ -165,6 +167,13 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <FloatingWhatsApp
+        accountName="PSA Ingeniería y construcción"
+        phoneNumber="+51923689624"
+        statusMessage="Respondemos a la brevedad posible"
+        chatMessage="¡Hola! 🤝 ¿Cómo podemos ayudarte?"
+        placeholder="Envianos un mensaje"
+      />
       <Footer />
     </>
   );

@@ -4,6 +4,8 @@ import BannerSolo from "../components/bannerSolo/BannerSolo";
 import imgForm from "../img/contacto/formulario/callcenter.jpg";
 import Footer from "../components/footer/Footer";
 
+import { FloatingWhatsApp } from "react-floating-whatsapp";
+
 export default function Contact() {
   return (
     <>
@@ -28,6 +30,13 @@ export default function Contact() {
           className="contact-image contact-container__image"
         />
       </div>
+      <FloatingWhatsApp
+        accountName="PSA Ingeniería y construcción"
+        phoneNumber="+51923689624"
+        statusMessage="Respondemos a la brevedad posible"
+        chatMessage="¡Hola! 🤝 ¿Cómo podemos ayudarte?"
+        placeholder="Envianos un mensaje"
+      />
       <Footer />
     </>
   );

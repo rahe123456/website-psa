@@ -5,6 +5,7 @@ import BannerSolo from "../components/bannerSolo/BannerSolo";
 import cards from "../img/proyectos/gallery";
 
 import { FloatingWhatsApp } from "react-floating-whatsapp";
+import bannerProyectos from "../img/proyectos/banner";
 
 export default function Projects() {
   const cardsData = [
@@ -133,7 +134,11 @@ export default function Projects() {
 
   return (
     <>
-      <BannerSolo banner="" bannerAlt="banner proyectos" />
+      <BannerSolo
+        bannerDesktop={bannerProyectos[0]}
+        bannerMobile={bannerProyectos[1]}
+        bannerAlt="banner proyectos"
+      />
       <h2 className="title-certi">Nuestros proyectos</h2>
       <Gallery cards={cardsData} />
       <FloatingWhatsApp

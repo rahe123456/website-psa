@@ -21,6 +21,10 @@ body {
   border-bottom: 8px solid #0643a7;
 }
 
+.navbar.scrolled .navbar-container .menu-links a {
+  color: white;
+}
+
 .navbar-container {
   display: flex;
   justify-content: space-between;
@@ -44,8 +48,8 @@ body {
 }
 
 .menu-links a {
-  text-decoration: none;
-  color: white;
+  /* text-decoration: none; */
+  color: #464646;
   font-weight: bold;
 }
 
@@ -60,7 +64,7 @@ body {
 .menu-toggle span {
   width: 25px;
   height: 3px;
-  background-color: white;
+  background-color: #464646;
 }
 
 .close-menu {
@@ -87,6 +91,10 @@ body {
     width: 100%;
     padding: 5rem;
     height: 400px;
+  }
+
+  .menu-links a {
+    color: white;
   }
 
   .menu-links.show {

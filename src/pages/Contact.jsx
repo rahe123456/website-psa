@@ -5,11 +5,16 @@ import imgForm from "../img/contacto/formulario/callcenter.jpg";
 import Footer from "../components/footer/Footer";
 
 import { FloatingWhatsApp } from "react-floating-whatsapp";
+import bannerContacto from "../img/contacto/banner";
 
 export default function Contact() {
   return (
     <>
-      <BannerSolo banner="" bannerAlt="banner nosotros" />
+      <BannerSolo
+        bannerDesktop={bannerContacto[0]}
+        bannerMobile={bannerContacto[1]}
+        bannerAlt="banner contacto"
+      />
       <div className="contact-container">
         <div className="contact-container__component">
           <div className="component-headerForm">

@@ -13,9 +13,10 @@ export default function carrousel({
 }) {
   const defaultOptions = {
     effect: "coverflow",
-    grabCursor: false,
-    centeredSlides: false,
+    grabCursor: true,
+    centeredSlides: true,
     slidesPerView: "auto",
+    loop: true,
     coverflowEffect: {
       rotate: 50,
       stretch: 0,

@@ -44,13 +44,12 @@ export default function Footer() {
             <h4>Redes Sociales</h4>
             <ul>
               <li>
-                <a href="#">Facebook</a>
-              </li>
-              <li>
-                <a href="#">Twitter</a>
-              </li>
-              <li>
-                <a href="#">Instagram</a>
+                <a
+                  target="__blank"
+                  href="https://www.facebook.com/profile.php?id=61567160891560"
+                >
+                  Facebook
+                </a>
               </li>
             </ul>
           </div>

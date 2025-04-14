@@ -78,25 +78,29 @@ export default function Gallery({ cards }) {
               {/* Información del proyecto */}
               <div className="modal-info">
                 <h2>{selectedCard.title}</h2>
-                <p>{selectedCard.description}</p>
+                {selectedCard.description ? (
+                  <p>{selectedCard.description}</p>
+                ) : (
+                  " "
+                )}
                 <div className="modal-details">
-                  <div>
+                  <div className="modal-details__descrip">
                     <p>
-                      <strong>📍 Ubicación:</strong> {selectedCard.ubicacion}
+                      <strong>📆FECHA DE ENTREGA: </strong>
                     </p>
-                    <p>
-                      <strong>📏 Área construida:</strong>{" "}
-                      {selectedCard.areaConstruida}
-                    </p>
+                    <p>{selectedCard.fechaEntrega}</p>
                   </div>
-                  <div>
+                  <div className="modal-details__descrip">
                     <p>
-                      <strong>⏳ Año de Obra:</strong> {selectedCard.anoObra}
+                      <strong>⏳ TRABAJO: </strong>
                     </p>
+                    <p>{selectedCard.trabajo}</p>
+                  </div>
+                  <div className="modal-details__descrip">
                     <p>
-                      <strong>⚖️ Tonelaje de obra:</strong>{" "}
-                      {selectedCard.tonelajeObra}
+                      <strong>⏳ AÑO DE OBRA: </strong>
                     </p>
+                    <p>{selectedCard.anoObra}</p>
                   </div>
                 </div>
               </div>

@@ -198,6 +198,12 @@
   margin: 30px auto;
   display: flex;
   gap: 3rem;
+  flex-direction: column;
+}
+
+.modal-details .modal-details__descrip {
+  display: flex;
+  flex-direction: column;
 }
 
 .modal-details p {

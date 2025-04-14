@@ -4,18 +4,18 @@
   align-items: center;
   gap: 50px;
   padding: 40px;
-  flex-wrap: wrap; /* Permite que los elementos se acomoden en pantallas pequeñas */
+  flex-wrap: wrap;
 }
 
 .card {
   text-align: center;
   max-width: 400px;
-  flex: 1; /* Hace que los elementos se ajusten automáticamente */
-  min-width: 300px; /* Evita que sean demasiado pequeños */
+  flex: 1;
+  min-width: 300px;
 }
 
 .icono {
-  width: 80px; /* Tamaño más flexible */
+  width: 200px;
   height: auto;
 }
 
@@ -34,12 +34,12 @@ p {
 /* RESPONSIVIDAD */
 @media (max-width: 768px) {
   .contenedor {
-    flex-direction: column; /* Pone los elementos uno debajo del otro en pantallas pequeñas */
+    flex-direction: column;
     gap: 30px;
   }
 
   .card {
-    max-width: 90%; /* Ajusta el ancho para que no quede pegado a los bordes */
+    max-width: 90%;
   }
 
   h2 {

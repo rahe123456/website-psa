@@ -1,7 +1,7 @@
 import ContactUs from "../components/contactUs/ContactUs";
 import BannerSolo from "../components/bannerSolo/BannerSolo";
 
-import imgForm from "../img/contacto/formulario/callcenter.jpg";
+import imgForm from "../img/contacto/formulario/imagen-contacto.webp";
 import Footer from "../components/footer/Footer";
 
 import { FloatingWhatsApp } from "react-floating-whatsapp";

@@ -6,6 +6,9 @@ import "./About.css";
 
 import carrouselClientes from "../img/nosotros/carrouselClientes";
 import bannerNosotros from "../img/nosotros/banner";
+import iconoNosotros from "../img/nosotros/nosotros.webp";
+import iconoMision from "../img/nosotros/mision.webp";
+import iconoVision from "../img/nosotros/vision.webp";
 
 import { FloatingWhatsApp } from "react-floating-whatsapp";
 
@@ -21,13 +24,13 @@ export default function About() {
         bannerAlt="banner nosotros"
       />
       <MediaText
-        imagen1=""
+        imagen1={iconoNosotros}
         titulo1="Psa ingeniería y construcción"
         descripcion1="Contamos con un equipo altamente calificado , comprometidos en brindar los mejores resultados , trabajando en equipo utilizando los programas adecuados."
       />
       <div className="contenedor">
         <div className="card">
-          <img src="mision-icon.png" alt="Misión" className="icono" />
+          <img src={iconoMision} alt="icono-misión" className="icono" />
           <h2>Misión</h2>
           <p>
             Mejorar la optimización de tiempo de fabricación y procesos de los
@@ -36,7 +39,7 @@ export default function About() {
         </div>
 
         <div className="card">
-          <img src="vision-icon.png" alt="Visión" className="icono" />
+          <img src={iconoVision} alt="Visión" className="icono" />
           <h2>Visión</h2>
           <p>
             Ser la empresa líder en el desarrollo de proyectos de ingeniería a

@@ -52,7 +52,8 @@ export default function Home() {
     {
       image: slides[6],
       title: "Cálculo y Diseño",
-      description: "",
+      description:
+        "*Precisión y Eficiencia: Reduce errores y optimiza los procesos de producción  *Optimizacion de Recursos: Minimiza desperdicios y reduce costos operativos  *Estética Funcional: Equilibra belleza y utilidad en cada diseño",
     },
     {
       image: slides[7],
@@ -77,34 +78,46 @@ export default function Home() {
       image: cardsHome[0].general,
       title: "CASA DE CAMPO",
       images: cardsHome[0].hijos,
-      description:
-        "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of de Finibus Bonorum et Malorum (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, Lorem ipsum dolor sit amet.., comes from a line in section 1.10.32.The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from de Finibus Bonorum et Malorum by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.",
-      ubicacion: "UBICACION OBRA",
-      areaConstruida: "27.000 m2",
-      anoObra: "2024",
-      tonelajeObra: "650 Tn",
+      description: "",
+      title: "PROYECTO 1",
+      fechaEntrega: "2 Días",
+      trabajo: `✓ Modelado y Detallado BIM – TEKLA STRUCTURES
+✓ Planos de partes para fabricación.
+✓ Planos de conjuntos.
+✓Planos de Montaje.
+✓ Informes detallados.
+✓ Modelo IFC`,
+      anoObra: "2022",
     },
     {
       image: cardsHome[1].general,
       title: "TAYLOY",
       images: cardsHome[1].hijos,
-      description:
-        "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of de Finibus Bonorum et Malorum (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, Lorem ipsum dolor sit amet.., comes from a line in section 1.10.32.The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from de Finibus Bonorum et Malorum by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.",
-      ubicacion: "UBICACION OBRA",
-      areaConstruida: "27.000 m2",
-      anoObra: "2024",
-      tonelajeObra: "650 Tn",
+      description: "",
+      title: "PROYECTO 2",
+      fechaEntrega: "2 Días",
+      trabajo: `✓ Modelado y Detallado BIM – TEKLA STRUCTURES
+✓ Planos de partes para fabricación.
+✓ Planos de conjuntos.
+✓Planos de Montaje.
+✓ Informes detallados.
+✓ Modelo IFC`,
+      anoObra: "2022",
     },
     {
       image: cardsHome[2].general,
       title: "LATAM",
       images: cardsHome[2].hijos,
-      description:
-        "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of de Finibus Bonorum et Malorum (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, Lorem ipsum dolor sit amet.., comes from a line in section 1.10.32.The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from de Finibus Bonorum et Malorum by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.",
-      ubicacion: "UBICACION OBRA",
-      areaConstruida: "27.000 m2",
-      anoObra: "2024",
-      tonelajeObra: "650 Tn",
+      description: "",
+      title: "PROYECTO 3",
+      fechaEntrega: "2 Días",
+      trabajo: `✓ Modelado y Detallado BIM – TEKLA STRUCTURES
+✓ Planos de partes para fabricación.
+✓ Planos de conjuntos.
+✓Planos de Montaje.
+✓ Informes detallados.
+✓ Modelo IFC`,
+      anoObra: "2022",
     },
   ];
   return (
@@ -136,6 +149,8 @@ export default function Home() {
 <strong>☛ Desarrollo de Ingeniería de elementos mecánicos.</strong><br> 
 
 <strong>☛ Desarrollo de Cálculos Estructurales – SAP2000</strong><br> 
+
+<strong>☛ Desarrollo modelado REVIT</strong>
 
 <strong>☛ Gestion BIM</strong> 
 "

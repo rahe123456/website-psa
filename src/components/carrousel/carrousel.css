@@ -22,14 +22,26 @@ body {
   padding-bottom: 50px;
 }
 
+.swiper-wrapper {
+  justify-content: center;
+}
 .carrousel-swiper .swiper-slide {
   background-position: center;
   background-size: cover;
-  width: 300px;
-  height: 150px;
+  width: 200px;
+  height: 100px;
 }
 
 .carrousel-swiper .swiper-slide img {
   display: block;
   width: 100%;
+}
+
+@media screen and(min-width: 768px) {
+  .carrousel-swiper .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 150px;
+  }
 }

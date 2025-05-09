@@ -16,12 +16,12 @@ const cards = [
   { general: imagen3, hijos: [imagen1, imagen2, imagen3, imagen4, imagen5] },
   { general: imagen4, hijos: [imagen1, imagen2, imagen3, imagen4, imagen5] },
   { general: imagen5, hijos: [imagen1, imagen2, imagen3, imagen4, imagen5] },
-  { general: imagen6, hijos: [imagen1, imagen2, imagen3, imagen4, imagen5] },
-  { general: imagen7, hijos: [imagen1, imagen2, imagen3, imagen4, imagen5] },
-  { general: imagen8, hijos: [imagen1, imagen2, imagen3, imagen4, imagen5] },
-  { general: imagen9, hijos: [imagen1, imagen2, imagen3, imagen4, imagen5] },
-  { general: imagen10, hijos: [imagen1, imagen2, imagen3, imagen4, imagen5] },
-  { general: imagen11, hijos: [imagen1, imagen2, imagen3, imagen4, imagen5] },
+  { general: imagen6, hijos: [imagen6] },
+  { general: imagen7, hijos: [imagen7] },
+  { general: imagen8, hijos: [imagen8] },
+  { general: imagen9, hijos: [imagen9] },
+  { general: imagen10, hijos: [imagen10] },
+  { general: imagen11, hijos: [imagen11] },
 ];
 
 export default cards;

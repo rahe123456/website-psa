@@ -10,8 +10,8 @@ import bannerProyectos from "../img/proyectos/banner";
 export default function Projects() {
   const cardsData = [
     {
-      image: cards[1].general,
-      images: cards[1].hijos,
+      image: cards[5].general,
+      images: cards[5].hijos,
       title: "PROYECTO 1",
       fechaEntrega: "2 Días",
       trabajo: `✓ Modelado y Detallado BIM – TEKLA STRUCTURES

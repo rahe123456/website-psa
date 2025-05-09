@@ -7,6 +7,7 @@ import "../styles/global.css";
 
 import mediaText1 from "../img/inicio/imagen-11.jpg";
 import cardsHome from "../img/inicio/cardHome";
+import cards from "../img/proyectos/gallery";
 import slides from "../img/inicio/sliderHome";
 import carrouselHome from "../img/inicio/carrouselHome";
 
@@ -75,10 +76,8 @@ export default function Home() {
 
   const cardsData = [
     {
-      image: cardsHome[0].general,
-      title: "CASA DE CAMPO",
-      images: cardsHome[0].hijos,
-      description: "",
+      image: cards[5].general,
+      images: cards[5].hijos,
       title: "PROYECTO 1",
       fechaEntrega: "2 Días",
       trabajo: `✓ Modelado y Detallado BIM – TEKLA STRUCTURES
@@ -90,12 +89,11 @@ export default function Home() {
       anoObra: "2022",
     },
     {
-      image: cardsHome[1].general,
-      title: "TAYLOY",
-      images: cardsHome[1].hijos,
-      description: "",
+      image: cards[6].general,
+      images: cards[6].hijos,
       title: "PROYECTO 2",
-      fechaEntrega: "2 Días",
+      description: "",
+      fechaEntrega: "4 Días",
       trabajo: `✓ Modelado y Detallado BIM – TEKLA STRUCTURES
 ✓ Planos de partes para fabricación.
 ✓ Planos de conjuntos.
@@ -105,12 +103,11 @@ export default function Home() {
       anoObra: "2022",
     },
     {
-      image: cardsHome[2].general,
-      title: "LATAM",
-      images: cardsHome[2].hijos,
-      description: "",
+      image: cards[7].general,
+      images: cards[7].hijos,
       title: "PROYECTO 3",
-      fechaEntrega: "2 Días",
+      description: "",
+      fechaEntrega: "7 Días",
       trabajo: `✓ Modelado y Detallado BIM – TEKLA STRUCTURES
 ✓ Planos de partes para fabricación.
 ✓ Planos de conjuntos.

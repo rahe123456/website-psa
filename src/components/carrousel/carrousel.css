@@ -22,9 +22,10 @@ body {
   padding-bottom: 50px;
 }
 
-.swiper-wrapper {
+/* .swiper-wrapper {
   justify-content: center;
-}
+} */
+
 .carrousel-swiper .swiper-slide {
   background-position: center;
   background-size: cover;

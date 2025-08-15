@@ -105,7 +105,7 @@ export default function Projects() {
       <Gallery cards={cardsData} />
       <FloatingWhatsApp
         accountName="PSA Ingeniería y construcción"
-        phoneNumber="+51923689624"
+        phoneNumber="+51924900702"
         statusMessage="Respondemos a la brevedad posible"
         chatMessage="¡Hola! 🤝 ¿Cómo podemos ayudarte?"
         placeholder="Envianos un mensaje"
